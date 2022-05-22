@@ -4,6 +4,7 @@ import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { theme } from '../../theme';
 import { feedbackTypes } from '../../utils/feedbackTypes';
 import { Button } from '../Button';
+import { Copyright } from '../Copyright';
 import { ScreenshotButton } from '../ScreenshotButton';
 import { FeedbackType } from '../Widget';
 import { styles } from './styles';
@@ -49,6 +50,8 @@ export function Form({ feedbackType }: Props) {
 
         <Button isLoading={false} />
       </View>
+
+      <Copyright />
     </View>
   );
 }

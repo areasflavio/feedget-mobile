@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 import { theme } from '../../theme';
 import { feedbackTypes } from '../../utils/feedbackTypes';
-import { Form } from '../Form';
+import { Success } from '../Success';
 import { styles } from './styles';
 
 export type FeedbackType = keyof typeof feedbackTypes;
@@ -35,7 +35,9 @@ function Widget() {
       >
         {/* <Options /> */}
 
-        <Form feedbackType="BUG" />
+        {/* <Form feedbackType="BUG" /> */}
+
+        <Success />
       </BottomSheet>
     </>
   );

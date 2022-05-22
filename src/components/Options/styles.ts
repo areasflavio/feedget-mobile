@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   },
   options: {
     width: '100%',
-    marginBottom: 8,
+    marginBottom: 48,
     flexDirection: 'row',
     justifyContent: 'center',
   },
