@@ -6,7 +6,8 @@ import {
 import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
-import { Widget } from './src/components/Widget';
+import 'react-native-gesture-handler';
+import Widget from './src/components/Widget';
 import { theme } from './src/theme';
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
       }}
     >
       <StatusBar style="light" backgroundColor="transparent" translucent />
+
       <Widget />
     </View>
   );
